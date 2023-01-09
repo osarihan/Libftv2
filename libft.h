@@ -6,7 +6,7 @@
 /*   By: osarihan <osarihan@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/13 11:15:19 by osarihan          #+#    #+#             */
-/*   Updated: 2022/08/27 22:39:20 by osarihan         ###   ########.fr       */
+/*   Updated: 2023/01/09 13:06:23 by osarihan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -95,4 +95,11 @@ int		ft_putchar_vol2(char c);
 int		print_hex(unsigned int n, char c);
 int		printer_ptr(unsigned long n);
 int		print_ptr(unsigned long n);
+///////////////////////////////LST FUNCTIONS///////////////////////////////////
+int		lstcmp(t_list *iter, char *str); //compare the given list to given string
+void	ft_dstry_node(t_list *iter, int c); //delete the number c'th node from the givin list
+char	*list_data(t_list *root, int index); //return the content of the index'th node
+t_list	*list_f_data(t_list *root, int index); //return the index'th node
+////////////////////////////////STRING FUNCTIONS////////////////////////////////
+int		ft_strcmp(char *asd, char *sda); //compare 2 string with each other
 #endif
